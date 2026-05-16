@@ -9,6 +9,7 @@ public class Mision {
     private String ubicacion;
     private LocalDate fecha;
     private String nivelDificultad;
+    private EstadoMision estado;
 
     public Mision(String id, String descripcion, String ubicacion, LocalDate fecha, String nivelDificultad) {
         this.id = id;
@@ -16,6 +17,7 @@ public class Mision {
         this.ubicacion = ubicacion;
         this.fecha = fecha;
         this.nivelDificultad = nivelDificultad;
+        this.estado = EstadoMision.INCOMPLETA;
     }
 
     public String getId() {
@@ -38,10 +40,13 @@ public class Mision {
         return nivelDificultad;
     }
     
+    public EstadoMision getEstado() {
+        return estado;
+    }
     @Override
     public String toString() {
         return "Mision [id=" + id + ", descripcion=" + descripcion + ", ubicacion=" + ubicacion + ", fecha=" + fecha
-                + ", nivelDificultad=" + nivelDificultad + "]"; 
+                + ", nivelDificultad=" + nivelDificultad + ", estado= " + estadon + "]"; 
     }
 
 }   

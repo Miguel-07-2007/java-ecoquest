@@ -3,7 +3,10 @@ package com.devsenior;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
-
+/**
+ * Todo voluntario debe tener un id, nombre, habilidades y una lista de misiones completadas.
+ * El id debe ser único para cada voluntario.
+*/
 public class Voluntario {
     private String id;
     private String nombre;
