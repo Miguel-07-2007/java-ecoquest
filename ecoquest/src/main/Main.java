@@ -1,6 +1,8 @@
-package com.devsenior;
+package com.miguelmontoya;
 
 import java.util.Scanner;
+
+import com.miguelmontoya.controller.EcoQuestService;
 
 public class Main {
     public static void main(String[] args) {
@@ -9,7 +11,5 @@ public class Main {
 
         // Registrar voluntario
         ecoQuestService.registrarVoluntario(scanner);
-
-     
     }
 }

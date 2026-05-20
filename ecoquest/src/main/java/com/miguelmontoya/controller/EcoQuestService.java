@@ -1,4 +1,4 @@
-package com.devsenior;
+package com.miguelmontoya.controller;
 
 import java.util.Arrays;
 import java.util.HashMap;
@@ -9,16 +9,22 @@ import java.util.Scanner;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import com.miguelmontoya.model.Mision;
+import com.miguelmontoya.model.Voluntario;
+import com.miguelmontoya.service.GestorMisiones;
+
 public class EcoQuestService {
     
     private Map<String, Voluntario> voluntarios;
     private Map<String, Mision> misiones;
+    private GestorMisiones gestorMisiones;
     private Set<String> puntosEco;
     private Set<String> misionesCompletadas;
 
     public EcoQuestService() {
         this.voluntarios = new HashMap<>();
         this.misiones = new HashMap<>();
+        this.gestorMisiones = new GestorMisiones();
         this.puntosEco = new HashSet<>();
         this.misionesCompletadas = new HashSet<>();
     }
