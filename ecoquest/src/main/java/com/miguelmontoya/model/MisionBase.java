@@ -1,6 +1,7 @@
 package com.miguelmontoya.model;
 
 import java.time.LocalDate;
+import java.util.Set;
 
 import com.miguelmontoya.enums.EstadoMision;
 
@@ -12,6 +13,7 @@ public abstract class MisionBase implements Mision{
     private LocalDate fecha;
     private String nivelDificultad;
     private EstadoMision estado;
+    private Set<Voluntario> voluntarios;
 
     public MisionBase(String id, String descripcion, String ubicacion, LocalDate fecha, String nivelDificultad) {
         this.id = id;
@@ -20,6 +22,7 @@ public abstract class MisionBase implements Mision{
         this.fecha = fecha;
         this.nivelDificultad = nivelDificultad;
         this.estado = EstadoMision.INCOMPLETA;
+        this.voluntarios =  voluntarios;
     }
 
     @Override

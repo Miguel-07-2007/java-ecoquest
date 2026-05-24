@@ -6,7 +6,7 @@ import com.miguelmontoya.enums.EstadoMision;
 
 public interface Mision {
 
-        String getId();
+    String getId();
 
     String getDescripcion();
 

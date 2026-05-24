@@ -12,6 +12,10 @@ import com.miguelmontoya.model.Voluntario;
 public class GestorMisiones {
     private LinkedHashMap<String, Mision> misiones = new LinkedHashMap<>();
 
+    public GestorMisiones(LinkedHashMap<String, Mision> misiones) {
+        this.misiones = misiones;
+    }
+    
     /**
      * Agregar una mision a misiones
      * @param mision
